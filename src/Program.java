@@ -39,5 +39,10 @@ public class Program {
 		seller.setName("Marta Jogadora");
 		sellerDao.update(seller);
 		System.out.println("Registro atualizado!");
+		
+		System.out.println("\n=== Test delete ===");
+		seller = sellerDao.findById(9);
+		sellerDao.delete(9);
+		System.out.println("Registro deletado!");
 	}
 }
